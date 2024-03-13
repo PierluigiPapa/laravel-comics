@@ -1,51 +1,187 @@
-/*resources/scss/app.scss*/
-@import "bootstrap/scss/bootstrap";
-
-@import "_partials/variables.scss";
+@import 'bootstrap/scss/bootstrap';
 
 
-.ec-nav-link {
-    color: $text;
-    border-bottom: 3px solid $white;
-    padding: 45px 0;
+.bg-blue{
+    background-color: #0282F9;
+}
 
-    &:hover {
-        color: $primary-color;
-        border-bottom: 3px solid $primary-color;
+.bg-gray{
+    background-color: #303030;
+}
+
+header{
+    ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 50px;
+        font-size: small;
+        font-weight: bold;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: #0282F9;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #0282F9;
+        }
+
     }
 }
 
-#top-nav {
-    background-color: $primary-color;
+.logo-box{
 
-    #info {
-        text-align: end;
-        a {
-            all: unset;
-            color: $white;
+    height: 120px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.jumbotron{
+    background-image: url('../img/jumbotron.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    background-color: #1C1C1C;
+    color: white;
+
+    .container{
+        position: relative;
+
+        .content{
+            background-color: #0282F9;
+            color: white;
+            padding: 15px;
+            font-size: 22px;
+            position: absolute;
+            top: -30px;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 60px;
+            margin-bottom: 50px;
+
+            .my-card{
+                width: calc(100% / 7);
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                img{
+                    width: 100%;
+                    height: 180px;
+
+                }
+
+                h6{
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding-top: 15px;
+                }
+            }
+        }
+
+        button{
+            background-color: #0282F9;
+            max-width: 200px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            margin-bottom: 30px;
             cursor: pointer;
+        }
+
+        .img-box{
+            max-width: 120px;
+            max-height: 120px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text{
+            vertical-align: middle;
+            align-items: center;
         }
     }
 }
 
-#jumbotron {
-    background-image: url("../img/jumbotron.jpg");
-    height: 400px;
-    background-size: cover;
-}
-
-.ec-img {
-    height: 180px;
-    object-fit: cover;
-}
-
-#ec-top-footer
-{
+footer{
+    width: 100%;
+    height: 450px;
     background-image: url('../img/footer-bg.jpg');
-    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: pointer;
 
-    .ec-img-footer {
-        width: 480px;
-        object-fit: cover;
+    ul li{
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+    }
+
+    .text{
+        color: gray;
+    }
+
+    .evid{
+        color: #0282F9;
+    }
+
+    .footer-bottom-image{
+        width: 100%;
+        height: 450px;
+        background-image: url('../img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    button{
+        padding: 10px;
+        border: 2px solid #0282F9;
+        background-color: #303030;
+        color: white;
+        cursor: pointer;
+    }
+
+    .social-networks{
+        display: flex;
+        justify-content: space-between;
+
+        h4{
+            color: #0282F9;
+            padding-right: 10px;
+            padding-top: 8px;
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                display: inline-block;
+
+            }
+        }
     }
 }
