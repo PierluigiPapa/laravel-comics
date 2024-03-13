@@ -22,7 +22,7 @@
             <a class="nav-link ec-nav-link text-uppercase" href="#">FANS</a>
             <a class="nav-link ec-nav-link text-uppercase" href="#">NEWS</a>
             <a class="nav-link ec-nav-link text-uppercase" href="#">SHOP</a>
-            <a class="nav-link ec-nav-link" href="#">Search</a>
+            <a class="nav-link ec-nav-link" href="#">Search <i class="fa-solid fa-magnifying-glass"></i></a>
         </nav>
     </div>
 
