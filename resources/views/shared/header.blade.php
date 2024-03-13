@@ -23,4 +23,6 @@
             <a class="nav-link ec-nav-link" href="#">SEARCH</a>
         </nav>
     </div>
+
+    <div id="jumbotron"></div>
 </header>
