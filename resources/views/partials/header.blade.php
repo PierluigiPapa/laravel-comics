@@ -1,4 +1,4 @@
-@php
+{{-- @php
     $links = [
         [
             'url' => '/',
@@ -51,7 +51,7 @@
             'active' => false
         ],
     ];
-@endphp
+@endphp --}}
 
 <header>
     <section class="bg-blue">
