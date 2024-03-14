@@ -21,7 +21,7 @@ Route::get('/', function () {
     return view('subpages.characters', [
         'comics' => $comics
     ]);
-   
+
 });
 
 Route::get('/comics', function () {
@@ -95,6 +95,3 @@ Route::get('/videos', function () {
         'comics' => $comics
     ]);
 });
-
-
-// Route::get(PERCORSO CON CUI ARRIVARE ALLA PAGINA, FUNZIONE DI CALLBACK CHE MI CREA LA RISPOSTA DA DARE ALL UTENTE)
